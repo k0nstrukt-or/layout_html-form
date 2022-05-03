@@ -4,34 +4,65 @@
     <meta charset="UTF-8">
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1.0,
+      maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <div class="form-field">
-      Surname:
-      <input type="text">
-    </div>
-    <div class="form-field">
-      Name:
-      <input type="text">
-    </div>
-    <div class="form-field">
-      How old are you?
-      <input
-        type="text"
-        value="12"
-      >
-    </div>
-    <div class="form-field">
-      Full date of birth:
-      <input
-      type="text"
-      placeholder="mm / dd / yyyy"
-      >
-    </div>
+    <section>
+      <fieldset>
+        <legend>Personal information</legend>
+        <div class="form-field">
+          Surname:
+          <input type="text">
+        </div>
+        <div class="form-field">
+          Name:
+          <input type="text">
+        </div>
+        <div class="form-field">
+          How old are you?
+          <input
+            type="text"
+            value="12"
+          >
+        </div>
+        <div class="form-field">
+          Full date of birth:
+          <input
+          type="text"
+          placeholder="mm / dd / yyyy"
+          >
+        </div>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <legend>Registration</legend>
+        <div class="form-field">
+          E-mail:
+          <input
+          type="text"
+          placeholder="email@example.com"
+          >
+        </div>
+        <div class="form-field">
+          Password:
+          <input
+          type="password"
+          >
+        </div>
+      </fieldset>
+    </section>
+    <section>
+      <fieldset>
+        <legend>An interesting fact about you!</legend>
+        Do you love cats?
+      </fieldset>
+    </section>
+    <section></section>
   </body>
 </html>
