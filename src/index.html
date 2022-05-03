@@ -22,7 +22,7 @@
             id="personSurename"
             type="text"
             name="surename"
-            required
+            autocomplete="off"
           >
         </div>
         <div class="element">
@@ -31,7 +31,7 @@
             id="personName"
             type="text"
             name="name"
-            required
+            autocomplete="off"
           >
         </div>
         <div class="element">
@@ -69,24 +69,28 @@
       <fieldset>
         <legend>Registration</legend>
         <div class="element">
-          <label for="emailAdress">E-mail:</label>
+          <label for="personEmail">E-mail:</label>
           <input
-            id="emailAdress"
+            id="personEmail"
             type="email"
             name="email"
             placeholder="email@example.com"
             required
             tabindex="1"
+            autocomplete="off"
           >
         </div>
         <div class="element">
-          <label for="pass">Password:</label>
+          <label for="personPassword">Password:</label>
           <input
-            id="pass"
+            id="personPassword"
             type="password"
-            name="password"
+            name="passWord"
+            minlength="6"
+            maxlength="24"
             required
             tabindex="2"
+            autocomplete="off"
           >
         </div>
       </fieldset>
@@ -166,6 +170,9 @@
         </div>
       </fieldset>
     </section>
-    <button type="submit">Submit</button>
+    <button
+      src="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      type="submit"
+    >Submit</button>
   </body>
 </html>
