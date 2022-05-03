@@ -8,51 +8,83 @@
       maximum-scale=1.0, minimum-scale=1.0"
     >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <section>
+    <section class="section-1">
       <fieldset>
         <legend>Personal information</legend>
-        <div class="form-field">
-          Surname:
-          <input type="text">
-        </div>
-        <div class="form-field">
-          Name:
-          <input type="text">
-        </div>
-        <div class="form-field">
-          How old are you?
+        <div class="formField">
+          <label for="personSurename">Surname:</label>
           <input
+            id="personSurename"
             type="text"
-            value="12"
+            name="surename"
+            required
           >
         </div>
-        <div class="form-field">
-          Full date of birth:
+        <div class="formField">
+          <label for="personName">Name:</label>
           <input
-          type="text"
-          placeholder="mm / dd / yyyy"
+            id="personName"
+            type="text"
+            name="name"
+            required
           >
         </div>
+        <div class="formField">
+          <label for="yourAge">How old are you?</label>
+          <input
+            id="yourAge"
+            type="text"
+            name="age"
+            value="12"
+            pattern="\d+"
+            minlength="1"
+            maxlength="3"
+          >
+        </div>
+        <div class="formField">
+          <label for="calendar">Full date of birth:</label>
+          <input
+            id="calendar"
+            type="text"
+            name="birthDay"
+            placeholder="mm / dd / yyyy"
+          >
+        </div>
+        <label for="check">I accept the term of the argeement</label>
+        <input
+          id="check"
+          type="checkbox"
+          name="terms"
+        >
       </fieldset>
     </section>
-    <section>
+    <section class="section-2">
       <fieldset>
         <legend>Registration</legend>
-        <div class="form-field">
-          E-mail:
+        <div class="formField">
+          <label for="emailAdress">E-mail:</label>
           <input
-          type="text"
-          placeholder="email@example.com"
+            id="emailAdress"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+            tabindex="1"
           >
         </div>
-        <div class="form-field">
-          Password:
+        <div class="formField">
+          <label for="pass">Password:</label>
           <input
-          type="password"
+            id="pass"
+            type="password"
+            name="password"
+            required
+            tabindex="2"
           >
         </div>
       </fieldset>
@@ -60,9 +92,55 @@
     <section>
       <fieldset>
         <legend>An interesting fact about you!</legend>
-        Do you love cats?
+        <div>Do you love cats?
+          <label>
+            <input
+              type="radio"
+              name="bulean"
+              value="y"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="bulean"
+              value="n"
+            >
+            No
+          </label>
+        </div>
+        <div>
+          <label for="color">What is your favorite color?</label>
+          <select name="color" id="color">
+            <option value="#fff">#fff</option>
+            <option value="#000" selected>#000</option>
+            <option value="#333">#333</option>
+          </select>
+        </div>
+        <div>
+          <label for="time">What time do you go to bed?</label>
+        </div>
+        <div>
+          <label for="car">What are your favorite brand of cars?</label>
+        </div>
       </fieldset>
     </section>
-    <section></section>
+    <section>
+      <fieldset>
+        <legend>Additional info:</legend>
+        <div>
+          <label for="comments">Comments</label>
+        </div>
+        <div>
+          <label for="recomend">Would you recommend us?</label>
+          <select name="trueOrFalse">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </section>
+    <button type="submit">Submit</button>
   </body>
 </html>
