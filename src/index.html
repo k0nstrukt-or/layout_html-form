@@ -34,8 +34,10 @@
             autocomplete="off"
           >
         </div>
+
         <div class="element">
           <label for="yourAge">How old are you?</label>
+
           <input
             id="yourAge"
             type="number"
@@ -48,8 +50,10 @@
             maxlength="3"
           >
         </div>
+
         <div class="element">
           <label for="calendar">Full date of birth:</label>
+
           <input
             id="calendar"
             type="date"
@@ -57,7 +61,9 @@
             placeholder="mm / dd / yyyy"
           >
         </div>
+
         <label for="check">I accept the term of the argeement</label>
+
         <input
           id="check"
           type="checkbox"
@@ -65,11 +71,14 @@
         >
       </fieldset>
     </section>
+
     <section class="section">
       <fieldset>
         <legend>Registration</legend>
+
         <div class="element">
           <label for="personEmail">E-mail:</label>
+
           <input
             id="personEmail"
             type="email"
@@ -80,8 +89,10 @@
             autocomplete="off"
           >
         </div>
+
         <div class="element">
           <label for="personPassword">Password:</label>
+
           <input
             id="personPassword"
             type="password"
@@ -95,9 +106,11 @@
         </div>
       </fieldset>
     </section>
+
     <section class="section">
       <fieldset>
         <legend>An interesting fact about you!</legend>
+
         <div class="element">Do you love cats?
           <label>
             <input
@@ -106,7 +119,9 @@
               value="y"
             >
             Yes
+
           </label>
+
           <label>
             <input
               type="radio"
@@ -114,21 +129,28 @@
               value="n"
             >
             No
+
           </label>
         </div>
+
         <div class="element">
           <label for="color">What is your favorite color?</label>
+
           <input
             type="color"
             name="color"
             id="color">
         </div>
+
         <div class="element">
           <label for="time">What time do you go to bed?</label>
+
           <input type="time">
         </div>
+
         <div class="element">
           <label for="car">What are your favorite brand of cars?</label>
+
           <select
             name="cars"
             id="car"
@@ -140,8 +162,10 @@
             <option value="lada">Lada</option>
           </select>
         </div>
+
         <div class="element">
           <label for="rate">How do you rate our work?</label>
+
           <input
             type="range"
             name="range"
@@ -151,18 +175,23 @@
         </div>
       </fieldset>
     </section>
+
     <section class="section">
       <fieldset>
         <legend>Additional info:</legend>
+
         <div class="element">
           <label for="comments">Comments:</label>
+
           <textarea
             name="comment"
             id="comments">
           </textarea>
         </div>
+
         <div class="element">
           <label for="recomend">Would you recommend us?</label>
+
           <select name="trueOrFalse">
             <option value="yes">yes</option>
             <option value="no">no</option>
@@ -170,11 +199,13 @@
         </div>
       </fieldset>
     </section>
-    <button
-      type="submit"
-      formaction="https://mate-academy-form-lesson.herokuapp.com/create-application"
+
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
     >
-      Submit
-    </button>
+      <label for="POST-name"></label>
+      <input type="submit" value="Submit">
+    </form>
   </body>
 </html>
