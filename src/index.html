@@ -13,197 +13,199 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <section class="section">
-      <fieldset>
-        <legend>Personal information</legend>
-        <div class="element">
-          <label for="personSurename">Surname:</label>
-          <input
-            id="personSurename"
-            type="text"
-            name="surename"
-            autocomplete="off"
-          >
-        </div>
-        <div class="element">
-          <label for="personName">Name:</label>
-          <input
-            id="personName"
-            type="text"
-            name="name"
-            autocomplete="off"
-          >
-        </div>
-
-        <div class="element">
-          <label for="yourAge">How old are you?</label>
-
-          <input
-            id="yourAge"
-            type="number"
-            name="age"
-            value="12"
-            pattern="\d+"
-            min="10"
-            max="100"
-            minlength="1"
-            maxlength="3"
-          >
-        </div>
-
-        <div class="element">
-          <label for="calendar">Full date of birth:</label>
-
-          <input
-            id="calendar"
-            type="date"
-            name="birthDay"
-            placeholder="mm / dd / yyyy"
-          >
-        </div>
-
-        <label for="check">I accept the term of the argeement</label>
-
-        <input
-          id="check"
-          type="checkbox"
-          name="terms"
-        >
-      </fieldset>
-    </section>
-
-    <section class="section">
-      <fieldset>
-        <legend>Registration</legend>
-
-        <div class="element">
-          <label for="personEmail">E-mail:</label>
-
-          <input
-            id="personEmail"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-            required
-            tabindex="1"
-            autocomplete="off"
-          >
-        </div>
-
-        <div class="element">
-          <label for="personPassword">Password:</label>
-
-          <input
-            id="personPassword"
-            type="password"
-            name="passWord"
-            minlength="6"
-            maxlength="24"
-            required
-            tabindex="2"
-            autocomplete="off"
-          >
-        </div>
-      </fieldset>
-    </section>
-
-    <section class="section">
-      <fieldset>
-        <legend>An interesting fact about you!</legend>
-
-        <div class="element">Do you love cats?
-          <label>
-            <input
-              type="radio"
-              name="bulean"
-              value="y"
-            >
-            Yes
-
-          </label>
-
-          <label>
-            <input
-              type="radio"
-              name="bulean"
-              value="n"
-            >
-            No
-
-          </label>
-        </div>
-
-        <div class="element">
-          <label for="color">What is your favorite color?</label>
-
-          <input
-            type="color"
-            name="color"
-            id="color">
-        </div>
-
-        <div class="element">
-          <label for="time">What time do you go to bed?</label>
-
-          <input type="time">
-        </div>
-
-        <div class="element">
-          <label for="car">What are your favorite brand of cars?</label>
-
-          <select
-            name="cars"
-            id="car"
-            required
-            multiple
-          >
-            <option value="bmw">BMW</option>
-            <option value="audi">Audi</option>
-            <option value="lada">Lada</option>
-          </select>
-        </div>
-
-        <div class="element">
-          <label for="rate">How do you rate our work?</label>
-
-          <input
-            type="range"
-            name="range"
-            id="rate"
-            value="0"
-          >
-        </div>
-      </fieldset>
-    </section>
-
-    <section class="section">
-      <fieldset>
-        <legend>Additional info:</legend>
-
-        <div class="element">
-          <label for="comments">Comments:</label>
-
-          <textarea
-            name="comment"
-            id="comments">
-          </textarea>
-        </div>
-
-        <div class="element">
-          <label for="recomend">Would you recommend us?</label>
-
-          <select name="trueOrFalse">
-            <option value="yes">yes</option>
-            <option value="no">no</option>
-          </select>
-        </div>
-      </fieldset>
-    </section>
-
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
     >
+      <section class="section">
+        <fieldset>
+          <legend>Personal information</legend>
+
+          <div class="element">
+            <label for="personSurename">Surname:</label>
+
+            <input
+              id="personSurename"
+              type="text"
+              name="surename"
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="element">
+            <label for="personName">Name:</label>
+            <input
+              id="personName"
+              type="text"
+              name="name"
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="element">
+            <label for="yourAge">How old are you?</label>
+
+            <input
+              id="yourAge"
+              type="number"
+              name="age"
+              value="12"
+              pattern="\d+"
+              min="10"
+              max="100"
+              minlength="1"
+              maxlength="3"
+            >
+          </div>
+
+          <div class="element">
+            <label for="calendar">Full date of birth:</label>
+
+            <input
+              id="calendar"
+              type="date"
+              name="birthDay"
+              placeholder="mm / dd / yyyy"
+            >
+          </div>
+
+          <label for="check">I accept the term of the argeement</label>
+
+          <input
+            id="check"
+            type="checkbox"
+            name="terms"
+          >
+        </fieldset>
+      </section>
+
+      <section class="section">
+        <fieldset>
+          <legend>Registration</legend>
+
+          <div class="element">
+            <label for="personEmail">E-mail:</label>
+
+            <input
+              id="personEmail"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+              tabindex="1"
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="element">
+            <label for="personPassword">Password:</label>
+
+            <input
+              id="personPassword"
+              type="password"
+              name="passWord"
+              minlength="6"
+              maxlength="24"
+              required
+              tabindex="2"
+              autocomplete="off"
+            >
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="section">
+        <fieldset>
+          <legend>An interesting fact about you!</legend>
+
+          <div class="element">Do you love cats?
+            <label>
+              <input
+                type="radio"
+                name="bulean"
+                value="y"
+              >
+              Yes
+
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="bulean"
+                value="n"
+              >
+              No
+
+            </label>
+          </div>
+
+          <div class="element">
+            <label for="color">What is your favorite color?</label>
+
+            <input
+              type="color"
+              name="color"
+              id="color">
+          </div>
+
+          <div class="element">
+            <label for="time">What time do you go to bed?</label>
+
+            <input type="time">
+          </div>
+
+          <div class="element">
+            <label for="car">What are your favorite brand of cars?</label>
+
+            <select
+              name="cars"
+              id="car"
+              required
+              multiple
+            >
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </div>
+
+          <div class="element">
+            <label for="rate">How do you rate our work?</label>
+
+            <input
+              type="range"
+              name="range"
+              id="rate"
+              value="0"
+            >
+          </div>
+        </fieldset>
+      </section>
+
+      <section class="section">
+        <fieldset>
+          <legend>Additional info:</legend>
+
+          <div class="element">
+            <label for="comments">Comments:</label>
+
+            <textarea
+              name="comment"
+              id="comments">
+            </textarea>
+          </div>
+
+          <div class="element">
+            <label for="recomend">Would you recommend us?</label>
+
+            <select name="trueOrFalse">
+              <option value="yes">yes</option>
+              <option value="no">no</option>
+            </select>
+          </div>
+        </fieldset>
+      </section>
       <label for="POST-name"></label>
       <input type="submit" value="Submit">
     </form>
